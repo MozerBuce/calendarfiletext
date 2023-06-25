@@ -1,0 +1,115 @@
+body {
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+table {
+    border-collapse: collapse;
+
+}
+
+th {
+    background-color: #5F00BA;
+    padding: 10px;
+    color: #ffffff;
+
+}
+
+tbody td:hover {
+    cursor: pointer;
+}
+
+td {
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: 2px solid #5F00BA;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #5F00BA;
+
+}
+
+.buttons button:hover {
+    cursor: pointer;
+}
+
+.marked {
+    background-color: #5FAD56;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    border: 1px solid #5F00BA;
+    border-radius: 5px;
+    width: 100%;
+
+}
+
+.title p {
+    font-size: larger;
+    color: #5F00BA;
+}
+
+.message{
+    border: 1px solid #5FAD56;
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message .success{
+    color: #5FAD56;
+}
+.message .failed{
+    color: #DE1A1A;
+}
+
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+    th,
+    td {
+        padding: 10px 20px;
+    }
+
+
+}
+
+@media only screen and (min-width: 768px) {
+
+    th,
+    td {
+        padding: 20px 40px;
+    }
+
+
+}
